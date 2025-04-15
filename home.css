@@ -15,37 +15,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Top Contact Section*/
-.top-contact-container {
-  background-color: 	#82ae46;
-}
-
-.top-contact-content{
-  display: flex;
-  flex-direction: column;
-}
-
-.top-contact-content h5{
-  color: #FFFFF7;
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 400;
-  padding: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .top-contact-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 60px;
-  }
-  .top-contact-content h5 {
-    font-size: 15px;
-  }
-}
-
 /* NavBar Section */
 nav {
   padding: 5px 5%;
@@ -61,19 +30,15 @@ nav .logo {
   display: flex;
   align-items: center;
 }
-nav .logo img {
-  height: 25px;
-  width: auto;
-  margin-right: 10px;
-}
+
 nav .logo h1 {
   font-size: 1.5rem;
-  background: #82ae46;
+  font-weight: 400;
+  background: #000;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .nav-items-container{
   list-style: none;
@@ -193,4 +158,95 @@ nav .logo h1 {
   .nav-items-container {
     display: none;
   }
+}
+
+
+
+/* Banner Section */
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+
+.banner-card {
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #dcdff7, #e7e9f6, #e8eaee, #f3f6e7);
+    background-color: #dcdff7;
+    min-height: 390px;
+    width: 280px;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    text-align: center;
+    top: 165px;
+}
+
+.banner-content h3 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #000;
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.banner-btn-card button {
+    min-height: 45px;
+    min-width: 80px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.banner-btn-1 {
+    background: #000;
+    color: #fff;
+}
+
+.banner-btn-2 {
+    background: transparent;
+    color: #000;
+    border: 1.6px solid #5a5c60 !important;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .banner-card {
+        min-height: 480px;
+    }
+    .banner-content h1{
+        font-size: 5.5rem;
+    }
+    .banner-btn-card {
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .banner-card {
+        min-width: 480px;
+        min-height: 550px;
+    }
+    .banner-content {
+        top: 100px;
+        padding: 50px;
+    }
+    .banner-content h1 {
+        font-size: 7.5rem;
+    }
 }
